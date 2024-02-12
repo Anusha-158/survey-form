@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scaling=1.0">
+    <title>Art Event Feedback Survey</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   <h1 id="title">Art Event Feedback  Survey Form</h1>
+   <p id="description">Thank you for attending our art event. Your feedback is valuable to us.</p>
+   <div class="container">
+     <form id="survey-form">
+        <div class="input-boxes">
+           <label for="name-label" id="name-label">Name:
+             <input type="text" id="name" placeholder="Enter your Name" required>
+           </label>
+           <label for="email-label" id="email-label">Email:
+             <input type="email" id="email" placeholder="Enter your Email" required>
+           </label>
+           <label for="number-label" id="number-label">Age:
+             <input type="number" id="number" min="16" max="100" placeholder="Enter your Age">
+           </label>
+        </div>
+        <div class="dropdowns">
+           <p class="title">Select your favorite art medium from the event:</p>
+           <select id="dropdown">
+              <option value="">(Select one)</option>
+              <option value="1">Painting</option>
+              <option value="2">Sculpture</option>
+              <option value="3">Photography</option>
+              <option value="4">Digital Art</option>
+            </select>
+        
+        </div>
+        <div class="radio-btns">
+            <p class="title">What was the highlight of the event for you?</p>
+            <fieldset>   
+            <label for="radio1" class="radio-button"> 
+               <input type="radio" id="radio1" name="highlight" value="artist"> Featured Artist
+            </label>
+            <label for="radio2" class="radio-button">
+               <input type="radio" id="radio2" name="highlight" value="performances"> Live Performances
+            </label>
+            <label for="radio3" class="radio-button">
+               <input type="radio" id="radio3" name="highlight" value="exhibits"> Interactive Exhibits
+            </label>
+        </fieldset>
+        </div>
+        <div class="checkboxes">
+            <p class="title">Check the boxes for the aspects you enjoyed:</p>
+            <fieldset>
+           <label for="checkbox1" class="radio-button">
+              <input type="checkbox" id="checkbox1" value="Artwork">Artwork Diversity
+           </label>
+           <label for="checkbox2" class="radio-button">
+             <input type="checkbox" id="checkbox2" value="Artist">Artist Interactions
+           </label>
+           <label for="checkbox3" class="radio-button">
+              <input type="checkbox" id="checkbox3" value="Event">Event Atmosphere
+            </label>
+            <label for="checkbox4" class="radio-button">
+              <input type="checkbox" id="checkbox4" value="Entertainment">Entertainment
+            </label>
+        </fieldset>
+        </div>
+        <div class="textarea">
+            <p class="title">Share your thoughts and suggestions about the event.</p>
+            <textarea rows="5" cols="25" placeholder="Enter your comments here:"></textarea> 
+        </div>
+        <div class="submit-btn">
+          <input type="submit" value="Submit" id="submit">
+        </div>
+    </form>
+</div>
+ </body>
+ </html>
